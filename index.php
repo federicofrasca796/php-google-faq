@@ -4,22 +4,22 @@ $privacy_page= [
     [
         'name' => 'Introduzione',
         'is_active' => false,
-        'content' => [],
+        'content' => ['empty'],
     ],
     [
         'name' => 'Norme sulla privacy',
         'is_active' => false,
-        'content' => [],
+        'content' => ['empty'],
     ],
     [
         'name' => 'Termini di servizio',
         'is_active' => false,
-        'content' => [],
+        'content' => ['empty'],
     ],
     [
         'name' => 'Tecnologie',
         'is_active' => false,
-        'content' => [],
+        'content' => ['empty'],
     ],
     [
         'name' => 'Domande frequenti',
@@ -138,18 +138,20 @@ $privacy_page= [
                 <?php if ($nav_link['is_active']) :?>
                     
                     <?php $contentArr = $nav_link['content'];
-                        foreach ($contentArr as $qa) :?>
-                            <?= $qa['question'] ?>
+                        foreach ($contentArr as $qa) :
+                        echo $qa['question'] ?>
+
                             <?php $answersArr = $qa['answer'];
-                            foreach ($answersArr as $p) :?>
-                                <?= $p ?>
+                            foreach ($answersArr as $p) :
+                            echo $p ?>
                                 
                             <?php endforeach?>
 
                         <?php endforeach ?>
-
                 <?php endif ?>
             <?php endforeach?>
     </main>
+
+    <footer></footer>
 </body>
 </html>
