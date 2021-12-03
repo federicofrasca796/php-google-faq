@@ -122,13 +122,15 @@ $privacy_page= [
 </head>
 <body>
     <header id="site_header">
-        <img src="./img/google-logo.svg" alt="google logo" class="logo">
-        <span class="page_title">Privacy e termini</span>
+        <div class="logo_band">
+            <img src="./img/google-logo.svg" alt="google logo" class="logo">
+            <span class="page_title">Privacy e termini</span>
+        </div>
 
         <nav id="site_navbar">
             <ul>
                 <?php foreach ($privacy_page as $nav_link) :?>
-                    <li><?= $nav_link['name']?></li>
+                    <li class="<?= $nav_link['is_active']? 'active_link' : ''?>"><?= $nav_link['name']?></li>
                 <?php endforeach?>
                 </ul>
             </nav>
@@ -153,6 +155,6 @@ $privacy_page= [
             <?php endforeach?>
     </main>
 
-    <footer></footer>
+    <footer id="site_footer"></footer>
 </body>
 </html>
