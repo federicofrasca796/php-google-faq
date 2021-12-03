@@ -1,0 +1,31 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul > li {
+    display: inline-block;
+    padding: .5rem 1rem .5rem;
+}
+#site_header{
+    height: 100px;
+    margin-bottom: 2rem;
+}
+#site_navbar{
+    font-size: 1.2rem;
+}
+.logo{
+    width: 100px;
+}
+.page_title{
+    font-size: 1.5rem;
+    color: #5F6368;
+}
+
+#site_main{
+    width: 900px;
+}
