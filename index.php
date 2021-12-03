@@ -3,19 +3,23 @@
 $privacy_page= [
     [
         'name' => 'Introduzione',
-        'is_active' => false
+        'is_active' => false,
+        'content' => [],
     ],
     [
         'name' => 'Norme sulla privacy',
-        'is_active' => false
+        'is_active' => false,
+        'content' => [],
     ],
     [
         'name' => 'Termini di servizio',
-        'is_active' => false
+        'is_active' => false,
+        'content' => [],
     ],
     [
         'name' => 'Tecnologie',
-        'is_active' => false
+        'is_active' => false,
+        'content' => [],
     ],
     [
         'name' => 'Domande frequenti',
@@ -148,9 +152,16 @@ $privacy_page= [
             <ul>
                 <?php foreach ($privacy_page as $nav_link) :?>
                     <li><?= $nav_link['name']?></li>
-                <?php endforeach?>
-            </ul>
-        </nav>
-    </header>
+                </ul>
+            </nav>
+        </header>
+        
+        <main id="site_main">
+            <?php if ($nav_link['is_active']) :?>
+                
+
+            <?php endif ?>
+            <?php endforeach?>
+    </main>
 </body>
 </html>
