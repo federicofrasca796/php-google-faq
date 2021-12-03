@@ -104,7 +104,7 @@ $privacy_page= [
                     ],
                 ],
             ],
-            
+
             [
                 'question' => "<h2>Come faccio a rimuovere informazioni su di me dai risultati di ricerca di Google?</h2>",
                 'answer' => [
@@ -114,7 +114,7 @@ $privacy_page= [
                 ],
                 
             ],
-            
+
             [
                 'question' => "<h2>Quando faccio clic sui risultati della Ricerca Google, le mie chiavi di ricerca vengono inviate ai siti web?</h2>",
                 'answer' => [
@@ -127,6 +127,21 @@ $privacy_page= [
     ],
 ];
 
-
+var_dump($privacy_page);
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="" alt="">
+    </header>
+</body>
+</html>
