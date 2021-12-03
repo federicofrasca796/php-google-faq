@@ -127,7 +127,7 @@ $privacy_page= [
     ],
 ];
 
-var_dump($privacy_page);
+// var_dump($privacy_page);
 
 ?>
 
@@ -141,7 +141,16 @@ var_dump($privacy_page);
 </head>
 <body>
     <header>
-        <img src="" alt="">
+        <img src="./img/google-logo.svg" alt="google logo">
+        <span class="page_title">Privacy e termini</span>
+
+        <nav id="site_navbar">
+            <ul>
+                <?php foreach ($privacy_page as $nav_link) :?>
+                    <li><?= $nav_link['name']?></li>
+                <?php endforeach?>
+            </ul>
+        </nav>
     </header>
 </body>
 </html>
